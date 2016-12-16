@@ -148,7 +148,6 @@ class PlayerClass {
 
                 downline.x = grid.x + this.x;
                 downline.y = grid.y + this.y;
-                //downline.draw(1, "green");
 
                 var colidx = 0;
 
@@ -166,8 +165,6 @@ class PlayerClass {
                             window[sfxtag].play();
                             if (window.collectibleCurrentSfx++ >= 7)
                                 window.collectibleCurrentSfx = 0;
-
-
                             continue;
                         }
                     }
