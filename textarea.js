@@ -10,7 +10,7 @@ class TextArea {
         this.y = y;
         this.text = string;
         this.draw = (atx, aty) => {
-            console.log("drawing " + string);
+            //console.log("drawing " + string);
             if (!game.resourcesLoaded) return;
             var length = this.text.length;
             for (var i = 0; i < length; i++) {

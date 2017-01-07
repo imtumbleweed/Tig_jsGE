@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    toolbox.ConfigureRightClick(); // Now that DOM is loaded, configure right click on toolbox
+    //toolbox.ConfigureRightClick(); // Now that DOM is loaded, configure right click on toolbox
 });
 
 const ACTION_MAKE_LEFT_SLOPE = 0;

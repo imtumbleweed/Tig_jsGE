@@ -6,7 +6,7 @@ var temp = new Segment(0,0,0,0);
 var poi = new Point(0,0);
 
 // Collision detection
-const TOTAL_COLPOINTS = 256;
+const TOTAL_COLPOINTS = 32;
 const DEFAULT_GRAVITY = 0.85;
 const MAXIMUM_GRAVITY = 5;
 var downline = new Segment(300,300,0,100);

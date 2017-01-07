@@ -58,7 +58,9 @@ var SoundStation = function(filename)
 			this.available = false;
 		}
 	}
-	this.onError = function() { console.log("Sound.load('" + filename_url + "')... Failed!"); }
+	this.onError = function() {
+		console.log("Sound.load('" + filename_url + "')... Failed!");
+	}
 	this.load = function(__buffer_ID, filename_url) {
 		var request = new XMLHttpRequest();
 		request.open('GET', filename_url, true);
@@ -71,8 +73,7 @@ var SoundStation = function(filename)
 		  	var sfxname = "sfx" +  filename_url.match(/([^\/]+)(?=\.\w+$)/)[0];
 		  	window[sfxname] = new Object();
 			window[sfxname].play = () => { Sound.play(__buffer_ID); }
-		    console.log("Sound.load('mp3')...[window." + sfxname + "] Ok!");
-
+		    // console.log("Sound.load('mp3')...[window." + sfxname + "] Ok!");
 			// if (filename_url == "http://www.learnjquery.org/games/gem/sfx/delune.mp3")
 			// window.soundtrackReady = true;
 		  }, this.onError);
